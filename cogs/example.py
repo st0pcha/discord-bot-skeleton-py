@@ -1,5 +1,6 @@
-import discord
 import config
+
+import discord
 from discord.ext import commands
 
 class CogName(commands.Cog):
@@ -14,5 +15,6 @@ class CogName(commands.Cog):
     async def test(self, ctx):
         await ctx.send("Test")
 
+        
 def setup(bot):
     bot.add_cog(CogName(bot))
